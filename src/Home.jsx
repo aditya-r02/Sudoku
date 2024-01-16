@@ -181,13 +181,8 @@ export default function Home(){
                                         return (
                                             <div className="flex">
                                                 <input type="text" className={`w-8 h-8 outline-none appearance-none 
-<<<<<<< HEAD
                                                 ${filled[i][j]?' text-darkTheme-200':'text-darkTheme-100 '}
                                                 text-center bg-darkTheme-400 placeholder:text-darkTheme-100`}
-=======
-                                                ${filled[i][j]?'font-bold':'text-blue-600'}
-                                                text-center border-[1px] border-slate-500`}
->>>>>>> 1b6f48019327df455b545cfdfcbf92a15340b577
                                                     value={data[i][j]} onChange={handleClick} x={i} y={j}
                                                     placeholder="-" key={j}
                                                 />
