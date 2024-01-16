@@ -163,7 +163,7 @@ export default function Home(){
     }
     //console.log(data['']['']);
     return (
-        <div className="mx-auto mt-20 tablet:mt-10">
+        <div className="mx-auto mt-20 tablet:mt-10 bg-darkTheme-400">
 
             <div>
             {
@@ -181,14 +181,14 @@ export default function Home(){
                                         return (
                                             <div className="flex">
                                                 <input type="text" className={`w-8 h-8 outline-none appearance-none 
-                                                ${filled[i][j]?'font-bold':'text-blue-600'}
-                                                text-center`}
+                                                ${filled[i][j]?' text-darkTheme-200':'text-darkTheme-100 '}
+                                                text-center bg-darkTheme-400 placeholder:text-darkTheme-100`}
                                                     value={data[i][j]} onChange={handleClick} x={i} y={j}
                                                     placeholder="-" key={j}
                                                 />
                                                 {
                                                     (j===2||j===5) &&
-                                                    (<div className="h-[100%] w-[0.12rem] bg-black "></div>)
+                                                    (<div className="h-[100%] w-[0.12rem] bg-darkTheme-300 "></div>)
                                                 }
                                             </div>
                                         )
@@ -198,7 +198,7 @@ export default function Home(){
                             </div>
                             {
                                     (i===2||i===5) && 
-                                    (<div className="w-full h-[0.12rem] bg-black "></div>)
+                                    (<div className="w-full h-[0.12rem] bg-darkTheme-300 "></div>)
                                 }
                         </div>
                     )
@@ -208,13 +208,13 @@ export default function Home(){
 
 
             <div className="flex justify-center gap-16 mt-10 ">
-                <button onClick={findSol} className="flex items-center justify-center py-2 px-3 bg-red-600 rounded-md text-lg
-                font-medium text-white">
+                <button onClick={findSol} className="flex items-center justify-center py-2 px-3 bg-darkTheme-300 rounded-md text-lg
+                font-medium text-darkTheme-100">
                     Submit
                 </button>
 
-                <button onClick={resetData}  className="flex items-center justify-center py-2 px-3 bg-sky-500 rounded-md text-lg
-                font-medium text-white">
+                <button onClick={resetData}  className="flex items-center justify-center py-2 px-3 bg-darkTheme-300 rounded-md text-lg
+                font-medium text-darkTheme-100">
                     Clear
                 </button>
             </div>

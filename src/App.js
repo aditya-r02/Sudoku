@@ -8,7 +8,7 @@ import Footer from './Footer';
 function App() {
 
   return (
-    <div className='flex flex-col w-screen h-screen relative'>
+    <div className='flex flex-col w-screen h-screen relative bg-darkTheme-400'>
       <Navbar/>
       <Home/>
       <Footer/>

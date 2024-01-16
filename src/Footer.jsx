@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white text-center py-4 absolute bottom-0 left-0 right-0">
+    <footer className="bg-darkTheme-400 text-darkTheme-200 text-center py-4 absolute bottom-0 left-0 right-0">
       <p className="text-sm">
         Made by Aditya Rana | View on{' '}
         <a
